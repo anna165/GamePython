@@ -197,7 +197,7 @@ while not game_over and not you_win:
             score += 1
             enemy.kill()
             log_file.write(player_name + " получил 1 очко, счет: " + str(score) + "\n")
-            score_text.image = score_text.font.render("Score: " + str(score), True, WHITE)
+            score_text.image = score_text.font.render("Score: " + str(score), True, BLACK)
 
 
     if score >= 10:
