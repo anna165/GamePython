@@ -170,4 +170,11 @@ for row in highscores:
     print(row[0], row[1])
 conn.close()
 
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+
 pygame.quit()
